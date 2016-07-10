@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+	head
+		title= newApp
+		link(href='/build/combined.css', rel="styleSheet", type="text/css")
+	body(ng-app='app')
+		header.panel.bg-info
+			h1.text-center new application
+		
+		h2.text-center frontend tehnologies:
+		table.table.table-striped.text-center
+			tr
+				th.text-center #
+				th.text-center tehnologies
+				th.text-center version
+			each res in resurses.frontend
+				tr.text-center
+					td.text-center= res.id
+					td.text-center= res.name
+					td.text-center= res.version
+		
+		div.text-center
+			h2 example link with angular router
+			div.text-center(ng-view)
+			<a href="#/home" class="btn btn-primary btn-lg active" role="button">home</a>
+			<a href="#/" class="btn btn-primary btn-lg active" role="button">start page</a>
+
+		
+		h2.text-center backend main tehnologies:
+		table.table.table-striped.text-center
+			tr
+				th.text-center #
+				th.text-center tehnologies
+				th.text-center version
+			each res in resurses.backend.main
+				tr.text-center
+					td.text-center= res.id
+					td.text-center= res.name
+					td.text-center= res.version
+
+		h2.text-center backend other(developers) tehnologies:
+		table.table.table-striped.text-center
+			tr
+				th.text-center #
+				th.text-center tehnologies
+				th.text-center version
+			each res in resurses.backend.dev
+				tr.text-center
+					td.text-center= res.id
+					td.text-center= res.name
+					td.text-center= res.version
+
+	footer.panel-footer.text-center
+		span.copyright Copyright, 2016 
+		span.copyright.glyphicon.glyphicon-copyright-mark
+
+	script(src='/build/combined.js', type="text/javascript")

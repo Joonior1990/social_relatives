@@ -1,0 +1,27 @@
+{
+  "name": "angular.node.d3",
+  "version": "0.0.1",
+  "description": "example from future",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "latest"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "latest",
+    "browserify": "latest",
+    "gulp-sass": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-notify": "latest",
+    "gulp-rename": "latest",
+    "browser-sync": "latest",
+    "vinyl-source-stream": "latest",
+    "gulp-sourcemaps": "latest"
+  }
+}
