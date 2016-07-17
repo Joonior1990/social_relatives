@@ -10,6 +10,8 @@ const vinylSource  = require("vinyl-source-stream");
 const rename       = require("gulp-rename");
 const notify       = require("gulp-notify");
 const sourceMaps   = require("gulp-sourcemaps");
+const uglify       = require("gulp-uglify");
+const concat       = require('gulp-concat');
 
 gulp.task('default', ['js', 'css', 'watch']);
 
@@ -18,6 +20,7 @@ gulp.task('js', function () {
     .bundle().on('error', function errorHandler(error){
       var args = Array.prototype.slice.call(arguments);
       notify.onError('Browserify error: <%= error.message %>').apply(this, args);
+      notify.onError('Browserify error: <%= error %>').apply(this, args);
       this.emit('end');
     })
   .pipe(vinylSource('combined.js'))

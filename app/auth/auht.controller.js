@@ -1,6 +1,6 @@
 module.exports = [
 	function() {
 		var vm = this;
-		vm.page = 'Login page';
+		vm.page = 'Auht page';
 	}
 ];
