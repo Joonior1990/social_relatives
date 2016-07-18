@@ -4,3 +4,8 @@
 		.controller('loginController', require('./login.controller'))
 		.factory('loginService', require('./login.service'));
 })();
+
+// angular.module('login.module', []);
+
+// require('./login.controller');
+// require('./login.service');
