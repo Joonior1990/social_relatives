@@ -1,12 +1,11 @@
-require('../vendor/angular/index');
-require('../vendor/angular-route/index');
+require('angular');
+require('angular-route');
 
 require('./config/config.module');
 
-require('./auth/auth.module');
-require('./home/home.module');
 require('./login/login.module');
-require('./login/login.controller');
+require('./home/home.module');
+require('./auth/auth.module');
 
 angular
 	.module('app', ['config.module', 'login.module', 'home.module', 'auth.module']);

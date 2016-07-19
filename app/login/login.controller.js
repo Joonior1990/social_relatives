@@ -1,18 +1,11 @@
-module.exports = [
-	function() {
-		var vm = this;
-		vm.page = 'Login page';
-	}
-];
-// require('../../vendor/angular/index');
+require('angular')
+	.module('login.module')
+	.controller('loginController', loginController);
 
-// angular.module('login.module')
-// 	controller('loginController', loginController);
+loginController.$inject = [];
 
-// loginController.$inject = [];
+function loginController() {
+	var vm = this;
 
-// function loginController() {
-// 	var vm = this;
-
-// 	vm.page = 'Login page';
-// }
+	vm.page = 'Login controller';
+}

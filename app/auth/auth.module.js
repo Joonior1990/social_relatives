@@ -1,6 +1,5 @@
-(() => {
-	angular
-		.module('auth.module', [])
-		.controller('authController', require('./auht.controller'))
-		.factory('authService', require('./auth.service'));
-})();
+require('angular')
+	.module('auth.module', []);
+
+require('./auht.controller');
+require('./auth.service');

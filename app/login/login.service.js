@@ -1,15 +1,9 @@
-module.exports = [
-	function() {
-		
-	}
-];
-// require('../../vendor/angular/index');
+require('angular')
+	.module('login.module')
+	.factory('loginService', loginService);
 
-// angular.module('login.module')
-// 	factory('loginService', loginService);
+loginService.$inject = [];
 
-// loginService.$inject = [];
+function loginService() {
 
-// function loginService() {
-
-// }
+}
