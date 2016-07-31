@@ -3,4 +3,16 @@
 @import "home/home.style";
 @import "login/login.style";
 
+header,
+footer {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+}
+header {
+	top: 0px;	
+}
+footer {
+	bottom: 0px;	
+}
 

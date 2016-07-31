@@ -11,6 +11,93 @@ div.well{
   width: 50%; 
   height: 50%;
   min-width: 200px;
-  max-width: 400px;
+  max-width: 400px; 
   padding: 40px;
+}
+
+.container-message {
+  z-index: 100;
+  position: fixed;
+  width: 400px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.wrong-entry {
+  -moz-animation: wrong-log 0.3s;
+  -webkit-animation: wrong-log 0.3s;
+  animation: wrong-log 0.3s;
+  border-color: #ed1c24;
+  color: #ed1c24;
+  
+  span {
+    border-color: #ebccd1;
+    background-color: #f2dede;
+  }
+}
+
+.show-message {
+  opacity: 0;
+  -moz-animation: show-opacity 5s;
+  -webkit-animation: show-opacity 5s;
+  animation: show-opacity 5s;
+}
+
+@-moz-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@-webkit-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+
+@-moz-keyframes show-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes show-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes show-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

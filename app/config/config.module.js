@@ -10,7 +10,7 @@
 			.when('/', {
 	      templateUrl: '/template/login/login.template.html',
 	      controller: 'loginController',
-	      controllerAs: 'login'
+	      controllerAs: 'ctrlLg'
 	    })
 	    .when('/home', {
 	      templateUrl: 'template/home/home.template.html',
