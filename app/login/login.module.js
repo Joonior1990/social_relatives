@@ -3,3 +3,4 @@ require('angular')
 
 require('./login.controller');
 require('./login.service');
+require('./directive/error.message.directive.js');

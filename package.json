@@ -10,22 +10,27 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.7",
+    "angular-mocks": "^1.5.8",
     "angular-route": "^1.5.7",
     "express": "^4.14.0",
-    "jade": "latest"
+    "jade": "latest",
+    "jasmine": "^2.4.1",
+    "karma": "^1.1.2",
+    "karma-jasmine": "^1.0.2"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-uglify": "^1.5.4",
-    "gulp-plumber": "latest",
-    "browserify": "latest",
-    "gulp-sass": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-notify": "latest",
-    "gulp-rename": "latest",
     "browser-sync": "latest",
-    "vinyl-source-stream": "latest",
-    "gulp-sourcemaps": "latest"
+    "browserify": "latest",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "^2.6.0",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "^1.5.4",
+    "karma-chrome-launcher": "^1.0.1",
+    "vinyl-source-stream": "latest"
   }
 }

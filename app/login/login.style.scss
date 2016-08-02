@@ -1,6 +1,6 @@
 div.well{
   height: 250px;
-} 
+}
 .Absolute-Center {
   margin: auto;
   position: absolute;
@@ -8,10 +8,10 @@ div.well{
 }
 
 .Absolute-Center.is-Responsive {
-  width: 50%; 
+  width: 50%;
   height: 50%;
   min-width: 200px;
-  max-width: 400px; 
+  max-width: 400px;
   padding: 40px;
 }
 
@@ -29,7 +29,7 @@ div.well{
   animation: wrong-log 0.3s;
   border-color: #ed1c24;
   color: #ed1c24;
-  
+
   span {
     border-color: #ebccd1;
     background-color: #f2dede;
@@ -38,9 +38,9 @@ div.well{
 
 .show-message {
   opacity: 0;
-  -moz-animation: show-opacity 5s;
-  -webkit-animation: show-opacity 5s;
-  animation: show-opacity 5s;
+  -moz-animation: show-opacity 7s;
+  -webkit-animation: show-opacity 7s;
+  animation: show-opacity 7s;
 }
 
 @-moz-keyframes wrong-log {
