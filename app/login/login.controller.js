@@ -51,10 +51,10 @@ function loginController($timeout) {
     var type = 'Error';
 
     if (elem.$name === 'login') {
-      message = 'Login need to consist of 3-25 latin symbols.';
+      message = 'Login need to consist of 3-20 latin symbols.';
     }
     if (elem.$name === 'password') {
-      message = 'Password doesn\'t is empty. Use any symbols.';
+      message = 'Password id used 8-20 latin symbols or numbers.';
     }
 
     if (message) {
@@ -62,6 +62,9 @@ function loginController($timeout) {
       removeMessage(errorMessage, $timeout, timeMessage);
     }
   }
+
+  // for test
+  // vm.removeMessage = removeMessage;
 
   function removeMessage(erorMessage, timeout, time) {
     timeout(function() {
@@ -79,10 +82,13 @@ function loginController($timeout) {
   }
 
   function blurChange(elem) {
-    var value = elem.$modelValue;
-
     var regularLogin = /^[a-zA-Z]{3,20}$/g;
-    var regularPassword = /^[a-zA-Z0-9_]{8,20}$/g;
+    var regularPassword = /^[а-яА-Яa-zA-Z0-9]{8,20}$/g;
+
+    if ( typeof elem != 'object'
+      || !(elem.$name == 'login' || elem.$name == 'password') ) {
+      return false;
+    }
 
     if (!elem.$modelValue) {
       vm.loginForm[elem.$name].checked = false;
@@ -90,8 +96,9 @@ function loginController($timeout) {
       return;
     }
 
-    var name = elem.$name;
     var regEx;
+    var name = elem.$name;
+    var value = elem.$modelValue;
 
     if (name === 'login') {
       regEx = regularLogin;
