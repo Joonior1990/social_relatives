@@ -7,17 +7,17 @@ routConfig.$inject = ['$routeProvider', '$locationProvider'];
 function routConfig($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: '/template/login/login.template.html',
+      templateUrl: 'app/login/login.template.html',
       controller: 'loginController',
       controllerAs: 'ctrlLg'
     })
     .when('/home', {
-      templateUrl: 'template/home/home.template.html',
+      templateUrl: 'app/home/home.template.html',
       controller: 'homeController',
       controllerAs: 'home'
     })
     .when('/auth', {
-      templateUrl: 'template/auth/auth.template.html',
+      templateUrl: 'app/auth/auth.template.html',
       controller: 'authController',
       controllerAs: 'auth'
     })

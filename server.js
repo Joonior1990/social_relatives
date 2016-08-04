@@ -10,13 +10,13 @@ app.set('view engine', 'jade');
 
 app.use('/build', express.static(path.join(__dirname, 'build')));
 app.use('/vendor', express.static(path.join(__dirname, 'vendor')));
-app.use('/template', express.static(path.join(__dirname, 'app')));
+app.use('/app', express.static(path.join(__dirname, 'app')));
 
-app.get('/', (req, res) => {
+app.get('/', function(req, res) {
   res.render('app', {
   	resurses: resurses
   });
 });
 
 app.listen(PORT);
-console.log(`Server started on port: ${PORT}`);
+console.log('Server started on port: ' + PORT);
