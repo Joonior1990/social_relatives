@@ -124,7 +124,11 @@ describe('test controller loginController', function() {
       var elemPasswordFalse = {$name: 'password', $modelValue: '!Корректный_пароль'};
 
       var elemLoginTrue = {$name: 'login', $modelValue: 'login'};
+<<<<<<< HEAD
       var elemPasswordTrue = {$name: 'password', $modelValue: 'Корректный_пароль'};
+=======
+      var elemPasswordTrue = {$name: 'password', $modelValue: 'КорректныйПароль'};
+>>>>>>> 93120627f62162183ba1441dc79e4ef82bcc9261
 
       vm.blurChange(elemFalse);
       vm.blurChange(elemFullFalse);

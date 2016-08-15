@@ -6,7 +6,7 @@ errorMessageDirective.$inject = [];
 function errorMessageDirective() {
   return {
     restrict: 'E',
-    templateUrl: './template/login/directive/error.message.template.html',
+    templateUrl: 'app/login/directive/error.message.template.html',
     link: function(scope, element, attr) {
       var elem = angular.fromJson(attr.elem);
 
